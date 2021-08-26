@@ -19,6 +19,7 @@ body {
 }
 .main-text {
     text-align: center;
+    margin-top: 50px;
 }
 @media (max-width: 678px) {
     .main-text {

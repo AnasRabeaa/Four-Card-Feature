@@ -1,0 +1,134 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grey-blue: hsl(229, 6%, 66%);
+    --light-grey: hsl(0, 0%, 98%);
+}
+body {
+    background-color: var(--light-grey);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+}
+.main-text {
+    text-align: center;
+}
+@media (max-width: 678px) {
+    .main-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+h1 {
+    color:var(--dark-blue);
+    font-weight: 200;
+    font-size: 30px;
+}
+@media (max-width: 678px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+h2 {
+    color:var(--dark-blue);
+    font-weight: 600;
+    font-size: 25px;
+}
+@media (max-width: 678px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+.main-text p {
+    color: var(--grey-blue);
+    font-weight: 200;
+    font-size: 17px;
+}
+@media (max-width: 678px) {
+    p {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.cards {
+    width: 325px;
+    height: 235px;
+    background-color: white;
+    padding: 0px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px 0px var(--grey-blue);
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.supervisor {
+    border-top: 5px solid var(--cyan);
+    margin-right: 15px;
+    align-self: center;
+}
+.team-builder {
+    border-top: 5px solid var(--red);
+    margin-bottom: 15px;
+}
+.karma {
+    border-top: 5px solid var(--orange);
+    margin-top: 15px;
+}
+.calculator {
+    border-top: 5px solid var(--blue);
+    margin-left: 15px;
+    align-self: center;
+}
+.icon {
+    position: relative;
+    float: right;
+    width: 70px;
+    margin-top: 30px;
+}
+.cards h3 {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.cards p {
+    color: var(--grey-blue);
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+    }
+    .cards {
+        width: 280px;
+    }
+    .supervisor,
+    .karma,
+    .team-builder,
+    .calculator {
+        margin: 0 0 15px 0;
+    }
+}
+footer {
+    margin-top: 50px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
